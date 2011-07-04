@@ -42,20 +42,13 @@ Les 99 premiers problèmes proviennent de [http://aperiodic.net/phil/scala/s-99/
 
 ## Modalités
 
-Pour le moment, il s'agit d'un "bac à sable". Donc pas besoin de configuration maven, ou sbt (mais les contributions sont acceptées).
-Par contre il faut avoir installer [Scala](http://www.scala-lang.org/downloads) et avoir "scala" dans le PATH. L'interpreteur (REPL) etant le principal outil.
+Une version modifiée de https://github.com/psug/dojos.git qui utilise Maven et Specs2. 
+Il faut avoir installer [Scala](http://www.scala-lang.org/downloads) et avoir "scala" dans le PATH. L'interpreteur (REPL) etant le principal outil.
 
 La version de scala utilisée est 2.9.0-1.
 
 Toutes les contributions sont les bien-venues, donc pour ceux qui connaissent git/github (fork + pull-request), pour les autres patch ou fichiers par email (sur la ml) ou ticket.
 
-    export PATH=$SCALA_HOME/bin:$PATH
-    cd psug
-    # git clone git://github.com/psug/dojos.git
-    # si vous n'avez pas 'git', vous pouvez utiliser le bouton "download" pour avoir une archive du projet
-    cd dojos
-    #scala -Djava.ext.dirs=lib/scala_2.9.0-1
-    ./repl
     
     scala> :load src/p001.scala
     Loading src/p001.scala...
