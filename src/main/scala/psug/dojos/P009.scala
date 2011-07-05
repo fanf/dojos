@@ -1,4 +1,5 @@
 package psug.dojos
+import org.scalacheck.Prop
 
 object P009 {
 
@@ -143,7 +144,7 @@ object P009 {
       l <- Gen.listOf(genListSameSymbol)
     } yield l.flatten
     
-    def propFlattenPackIsIdentity[T](pack : List[Symbol] => List[List[Symbol]]) = {
+    def propFlattenPackIsIdentity[T](pack : List[Symbol] => List[List[Symbol]]) : Prop = {
       forAll(genListOfSuiteSameSymbol) { (l1: List[Symbol]) => 
         pack(l1).flatten == l1 
       }
